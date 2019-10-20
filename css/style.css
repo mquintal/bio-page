@@ -96,12 +96,24 @@ body {
 
 .content {
     float: left;
-    width: 300px;
+    width: 600px;
 }
     .title {
         font-size: 48px;
         font-weight: normal;
         line-height: 1;
+    }
+    
+    .content > p {
+      font-size: 12pt;
+    }
+    
+    .content > p.mailme {
+      font-size: 10pt;
+    }
+    
+    .social-icons {
+      margin-top: 40px;
     }
 
     .social-icons li {
