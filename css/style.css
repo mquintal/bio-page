@@ -66,16 +66,12 @@ textarea {
     font: inherit;
 }
 
-
-
-
-
 /*------------------------------------*\
     $MAIN
 \*------------------------------------*/
 html {
     background-color: #f6f9f9;
-    color: #95a4a9;
+    color: #676969;
     font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body {
@@ -86,13 +82,14 @@ body {
     float: left;
     margin: 0 40px 20px 0;
 }
-    .avatar img {
-        max-width: 200px;
-        max-height: 200px;
-        border-radius: 125px;
-        -webkit-filter: grayscale(0.7);
-        filter: grayscale(0.7);
-    }
+
+.avatar img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 125px;
+    -webkit-filter: grayscale(0.7);
+    filter: grayscale(0.7);
+}
 
 .content {
     float: left;
@@ -102,6 +99,8 @@ body {
         font-size: 48px;
         font-weight: normal;
         line-height: 1;
+        display: inline-block;
+        max-width: 180px;
     }
     
     .content > p {
@@ -159,7 +158,7 @@ ul, ol, dl {
     list-style-type: none;
 }
 a {
-    color: #339999;
+    color: #b92993;
     font-weight: bold;
 }
 a:hover, a:focus {

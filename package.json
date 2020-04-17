@@ -1,0 +1,25 @@
+{
+  "name": "bio-page",
+  "version": "1.0.0",
+  "description": "Hey there!",
+  "main": "index.js",
+  "scripts": {
+    "dir": "rm -rf build && mkdir build && mkdir build/css",
+    "styles": "npx minify css/style.css > build/css/style.css",
+    "html": "npx minify index.html > build/index.html",
+    "build": "npm run dir && npm run styles && npm run html && cp CNAME build/CNAME"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mquintal/bio-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mquintal/bio-page/issues"
+  },
+  "homepage": "https://github.com/mquintal/bio-page#readme",
+  "devDependencies": {
+    "minify": "^5.1.1"
+  }
+}
