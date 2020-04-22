@@ -18,52 +18,18 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
 }
-article, aside, details, figcaption, figure, footer,
-header, hgroup, menu, nav, section {
-    display: block;
-}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-strong, b, mark {
-    font-weight: bold;
-    font-style: inherit;
-}
-em, i, cite, q, address, dfn, var {
-    font-style: italic;
-    font-weight: inherit;
-}
-abbr[title], dfn[title] {
-    cursor: help;
-    border-bottom: 1px dotted;
-}
-ins {
-    border-bottom: 1px solid;
-}
+
 a, u, ins {
     text-decoration: none;
 }
-del, s {
-    text-decoration: line-through;
-}
-pre, code, samp, kbd {
-    font-family: monospace;
-}
-small {
-    font-size: 0.75em;
-}
+
 img {
     border: none;
     font-style: italic;
-}
-input,
-select, option, optgroup,
-textarea {
-    font: inherit;
 }
 
 /*------------------------------------*\
@@ -84,11 +50,8 @@ body {
 }
 
 .avatar img {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 125px;
-    -webkit-filter: grayscale(0.7);
-    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5);
 }
 
 .content {
@@ -107,40 +70,34 @@ body {
       font-size: 12pt;
     }
     
-    .content > p.mailme {
-      font-size: 10pt;
-    }
-    
     .social-icons {
-      margin-top: 40px;
+      margin-top: 60px;
     }
 
     .social-icons li {
         display: inline;
     }
-        .social-icons a {
-            display: inline-block;
-            margin-right: 10px;
-            text-indent: -9999px;
-            width: 50px;
-            height: 50px;
 
-        }
-            .twitter {
-                background-image: url(../img/twitter.png);
-            }
-            .github {
-                background-image: url(../img/github.png);
-            }
-            .instagram {
-                background-image: url(../img/instagram.png);
-            }
-            .linkedin {
-                background-image: url(../img/linkedin.png);
-            }
+    .social-icons li a {
+        display: inline-block;
+        margin-right: 10px;
+        text-indent: -9999px;
+        width: 30px;
+        height: 30px;
 
-
-
+    }
+    .social-icons li a.twitter {
+        background-image: url(../img/twitter.svg);
+    }
+    .social-icons li a.github {
+        background-image: url(../img/github.svg);
+    }
+    .social-icons li a.linkedin {
+        background-image: url(../img/linkedin.svg);
+    }
+    .social-icons li a.medium {
+        background-image: url(../img/medium.svg);
+    }
 
 
 /*------------------------------------*\
@@ -189,31 +146,17 @@ a img:hover,
     transition: opacity 0.2s ease;
 }
 
-/*
-Animate.css - http://daneden.me/animate
-LICENSED UNDER THE  MIT LICENSE (MIT)
-
-Copyright (c) 2012 Dan Eden
-*/
 .animated {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.animated.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 800ms;
+    -moz-animation-duration: 800ms;
+    -ms-animation-duration: 800ms;
+    -o-animation-duration: 800ms;
+    animation-duration: 800ms;
 }
 
 @-webkit-keyframes bounceInDown {
@@ -295,10 +238,6 @@ Copyright (c) 2012 Dan Eden
     animation-name: bounceInDown;
 }
 
-
-
-
-
 /*------------------------------------*\
     $MOBILE
 \*------------------------------------*/
@@ -310,8 +249,13 @@ Copyright (c) 2012 Dan Eden
     }
 
     .avatar img {
-        max-width: 125px;
-        max-height: 125px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
 
     .content {
